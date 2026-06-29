@@ -32,8 +32,8 @@ Source = "https://github.com/matan1008/parameter-decorators"
 [project.optional-dependencies]
 testing = ["pytest"]
 
-[tool.setuptools.packages]
-find = { }
+[tool.setuptools.packages.find]
+exclude = ["tests*"]
 
 [tool.distutils.bdist_wheel]
 universal = true
